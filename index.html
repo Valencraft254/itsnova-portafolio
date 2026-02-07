@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PORTAFOLIO ITSNOVA91</title>
+
+<style>
+:root{
+    --negro:#000;
+    --blanco:#fff;
+    --dueno:#facc15;
+    --manager:#38bdf8;
+    --fundador:#a78bfa;
+    --admin:#f97316;
+    --dev1:#00ff88;
+    --dev2:#22c55e;
+    --dev3:#4ade80;
+}
+
+/* BASE */
+body{
+    margin:0;
+    font-family:'Segoe UI', Arial, sans-serif;
+    background: radial-gradient(circle at top, #050505 0%, #000 70%);
+    color:var(--blanco);
+}
+
+/* MENU */
+.menu-btn{
+    position:fixed;
+    top:15px;
+    left:15px;
+    font-size:30px;
+    cursor:pointer;
+    z-index:1001;
+}
+
+.side-menu{
+    position:fixed;
+    top:0;
+    left:-260px;
+    width:240px;
+    height:100%;
+    background:#050505;
+    border-right:1px solid rgba(255,255,255,0.1);
+    padding:20px;
+    transition:.3s;
+    z-index:1000;
+}
+
+.side-menu a{
+    display:block;
+    color:white;
+    text-decoration:none;
+    font-size:1.1rem;
+    margin:20px 0;
+}
+
+.side-menu a:hover{
+    color:#38bdf8;
+}
+
+#menu-toggle{
+    display:none;
+}
+
+#menu-toggle:checked ~ .side-menu{
+    left:0;
+}
+
+/* HEADER */
+header{
+    text-align:center;
+    padding:60px 20px 40px;
+}
+
+/* LOGO */
+.avatar{
+    width:140px;
+    height:140px;
+    border-radius:50%;
+    border:3px solid #2563eb;
+    box-shadow:0 0 25px rgba(37,99,235,0.6);
+    margin:auto;
+    overflow:hidden;
+}
+
+.avatar img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+header h1{
+    margin:15px 0 5px;
+    letter-spacing:2px;
+}
+
+header p{
+    color:#9ca3af;
+}
+
+/* CONTENEDOR */
+.container{
+    max-width:900px;
+    margin:auto;
+    padding:20px;
+}
+
+/* SERVER */
+.server{
+    background:linear-gradient(135deg, #050505, #0a0a0a);
+    border:1px solid rgba(255,255,255,0.08);
+    border-radius:14px;
+    padding:18px;
+    margin-bottom:15px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    transition:.2s;
+}
+
+.server:hover{
+    transform:translateY(-3px);
+    box-shadow:0 0 25px rgba(255,255,255,0.15);
+}
+
+.server a{
+    color:white;
+    text-decoration:none;
+}
+
+/* ROLES */
+.role{
+    padding:6px 14px;
+    border-radius:999px;
+    font-weight:bold;
+    font-size:0.85rem;
+    text-transform:uppercase;
+}
+
+.dueno{ background:var(--dueno); color:#000; }
+.manager{ background:var(--manager); color:#000; }
+.fundador{ background:var(--fundador); color:#000; }
+.admin{ background:var(--admin); color:#000; }
+
+.developer{
+    background:linear-gradient(90deg,var(--dev1),var(--dev2),var(--dev3));
+    color:#000;
+    box-shadow:0 0 15px rgba(34,197,94,.9);
+    animation:rgb 4s linear infinite;
+}
+
+@keyframes rgb{
+    0%{filter:hue-rotate(0deg);}
+    100%{filter:hue-rotate(360deg);}
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:30px;
+    color:#6b7280;
+    font-size:.85rem;
+}
+</style>
+</head>
+
+<body>
+
+<input type="checkbox" id="menu-toggle">
+
+<label for="menu-toggle" class="menu-btn">☰</label>
+
+<div class="side-menu">
+    <h3>Redes</h3>
+    <a href="https://www.tiktok.com/@nova91x?is_from_webapp=1&sender_device=pc" target="_blank">TikTok</a>
+    <a href="https://discord.gg/sS9DBSz53m" target="_blank">Discord</a>
+</div>
+
+<header>
+    <div class="avatar">
+        <img src="logo.png" alt="Logo ITSNOVA91">
+    </div>
+    <h1>PORTAFOLIO ITSNOVA91</h1>
+    <p>Staff • Developer • Administración</p>
+</header>
+
+<div class="container">
+
+    <div class="server">
+        <span>SolaryCraft Network</span>
+        <span class="role dueno">Dueño</span>
+    </div>
+
+    <div class="server">
+        <span>Steal a Colombianrot</span>
+        <span class="role dueno">Dueño</span>
+    </div>
+
+    <div class="server">
+        <span>Grab a Latamrot</span>
+        <span class="role manager">Manager</span>
+    </div>
+
+    <div class="server">
+        <span>Steal a Extincion</span>
+        <span class="role fundador">Fundador</span>
+    </div>
+
+    <div class="server">
+        <a href="https://discord.gg/XXbbrbKRZm" target="_blank">Steal a Col</a>
+        <span class="role fundador">Fundador</span>
+    </div>
+
+    <div class="server">
+        <a href="https://discord.gg/v9gf3pmBWE" target="_blank">Latam Roleplay</a>
+        <span class="role fundador">Fundador</span>
+    </div>
+
+    <div class="server">
+        <a href="https://discord.gg/sS9DBSz53m" target="_blank">Los Papus Community</a>
+        <span class="role fundador">Fundador</span>
+    </div>
+
+    <div class="server">
+        <span>Roba en Colombia</span>
+        <span class="role developer">Developer</span>
+    </div>
+
+    <div class="server">
+        <span>GalaxyLand</span>
+        <span class="role admin">Admin</span>
+    </div>
+
+</div>
+
+<footer>
+    © 2026 ITSNOVA91 • Portfolio Gamer
+</footer>
+
+</body>
+  </html>
